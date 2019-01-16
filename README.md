@@ -41,6 +41,7 @@
   2. フロントエンドのソースコードをビルド
   ```
   $ cd {PWD}/todo-frontend
+  $ npm install
   $ npm run build
   ```
   3. バックエンドのソースコードをビルド
