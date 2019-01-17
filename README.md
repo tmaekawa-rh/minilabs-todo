@@ -21,7 +21,6 @@
     - CI パイプライン関連コンテナ
       - Jenkins
       - SonarQube
-----
 
 ## アプリケーションの動作確認
 
@@ -56,7 +55,6 @@
   $ docker-compose up --build
   ```
   5. `http://localhost/todo` にアクセス
-----
 
 ## 開発を実施する前に
 
@@ -78,7 +76,6 @@
   $ git commit -m "initial commit"
   $ git push
   ```
-----
 
 ## CIパイプラインの構築
 

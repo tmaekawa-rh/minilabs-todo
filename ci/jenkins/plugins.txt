@@ -75,3 +75,6 @@ pipeline-build-step
 script-security
 resource-disposer
 config-file-provider
+build-monitor-plugin
+sounds
+gatling
