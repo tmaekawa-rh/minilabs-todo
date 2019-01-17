@@ -15,5 +15,9 @@ RUN curl -fsSL https://get.docker.com/builds/Linux/x86_64/docker-${DOCKER_CLIENT
 
 EXPOSE 5900
 
+RUN curl -fsSL https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/2.3.0/gatling-charts-highcharts-bundle-2.3.0-bundle.zip -o gatling.zip \
+  && unzip gatling.zip
+RUN chmod 755 /gatling-charts-highcharts-bundle-2.3.0/bin/gatling.sh
+
 COPY plugins.txt /var/jenkins_home/
 RUN /usr/local/bin/install-plugins.sh < /var/jenkins_home/plugins.txt
