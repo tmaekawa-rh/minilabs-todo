@@ -129,5 +129,8 @@ pipeline {
             // save test JUnit format reports
             junit allowEmptyResults: true, testResults: 'test/**/*.xml'
         }
+        failure {
+            sh 'curl http://localhost:1080/sounds/playSound?src=http://serveurtif.free.fr/dod/sound/ambience/bomb.wav'
+        }
     }
 }

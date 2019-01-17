@@ -173,5 +173,14 @@
          - Script Path: Jenkinsfile
      - 画面下部「保存」をクリックする
   7. todo-appジョブ画面からビルド実行
+  8. アンドン（行灯）表示用ビューを設定する
+     - Jeinkinsのトップ画面からNew Viewをクリックする
+       - ビュー名に "Build Monitor" と入力
+       - "Build Monitor View" をラジオボタンを選択
+       - 「OK」をクリックする
+     - 遷移先にて以下の情報を選択
+       - Job Filters: Jobs
+         - todo-app にチェック
+       - 「保存」をクリックする
 
 以上
